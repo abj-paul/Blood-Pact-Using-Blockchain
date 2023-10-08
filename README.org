@@ -1,3 +1,9 @@
+* About
+ The typical Xianxia revolves around a lot of bloodpact of demonic cultivators. You no longer need a sacrifical ritual to form a blood pact, for we have brought a blockchain-based one <3 
+
+ [[file:resources/blood_pact_image.jpg]]
+
+ Welcome! The blood pact without blood - instead use blockchain!
 * Features
 - [ ] Prepare Contract File
 - [ ] Deploy in testnet
