@@ -1,0 +1,7 @@
+* Features
+- [ ] Prepare Contract File
+- [ ] Deploy in testnet
+- [ ] Prepare Backend
+- [ ] Prepare Frontend
+- [ ] Prepare Automated Contract Generation
+- [ ] Prepare Automated Testing

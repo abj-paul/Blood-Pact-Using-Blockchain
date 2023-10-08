@@ -1,0 +1,5 @@
+We have deployed the contract at solidity. The contract address is:
+
+0x9CC6A325ca9A4BaE36c02e3ca07a42F15586681c
+
+Search it in ~sepolia testnet~ to view its details.
