@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Large Form</title>
+</head>
+<body>
+    <h1>Large Form</h1>
+    <form id="largeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="password">Password (at least 8 characters):</label>
+        <input type="password" id="password" name="password" required pattern=".{8,}"><br><br>
+
+        <label for="email">Email (valid email address):</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rewritePassword">Rewrite Password:</label>
+        <input type="password" id="rewritePassword" name="rewritePassword" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("largeForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const result = document.getElementById("result");
+            const name = document.getElementById("name").value;
+            const age = document.getElementById("age").value;
+            const password = document.getElementById("password").value;
+            const email = document.getElementById("email").value;
+            const rewritePassword = document.getElementById("rewritePassword").value;
+            const resultText = [];
+
+            if (name && age && password && email && rewritePassword) {
+                resultText.push(`Name: ${name}`);
+                resultText.push(`Age: ${age}`);
+                resultText.push(`Email: ${email}`);
+                resultText.push("Password: ********"); // Masking the password for security
+                resultText.push("Rewrite Password: ********");
+            } else {
+                resultText.push("Please fill in all fields.");
+            }
+
+            if (password !== rewritePassword) {
+                resultText.push("Password and Rewrite Password do not match.");
+            }
+
+            result.innerHTML = resultText.join("<br>");
+        });
+    </script>
+</body>
+</html>
+

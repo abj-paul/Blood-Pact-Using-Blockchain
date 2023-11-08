@@ -1,0 +1,16 @@
+* About
+In this project, we use selenium webdriver to test a simple registration page. The page takes username, password(at least 8 character long), rewrites password(that should match original password), email(a valid one) and finally confirms account by clicking on submit.
+
+The form shows error message if the requirements for registration are not fulfilled. 
+
+We use selenium webdriver and write 5 test cases to test them.
+
+* Installation
+#+begin_src bash
+npm install
+tsc test.ts
+node test.js
+#+end_src
+
+Once you execute the tests using ~node test.js~, selenium webdriver will open a browser instance and perform the tests.
+
