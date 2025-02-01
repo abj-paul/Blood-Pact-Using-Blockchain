@@ -2,7 +2,7 @@ import { Builder, By, until, WebDriver } from 'selenium-webdriver';
 
 (async function runTests() {
   // Initialize the Chrome WebDriver
-  const driver: WebDriver = await new Builder().forBrowser('chrome').build();
+  cnst driver: WebDriver = await new Builder().forBrowser('chrome').build();
 
   try {
     // Open the HTML form page

@@ -39,12 +39,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var selenium_webdriver_1 = require("selenium-webdriver");
 (function runTests() {
     return __awaiter(this, void 0, void 0, function () {
-        var driver, testCases, _i, testCases_1, testCase, resultText;
+        var testCases, _i, testCases_1, testCase, resultText;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, new selenium_webdriver_1.Builder().forBrowser('chrome').build()];
+                case 0:
+                    // Initialize the Chrome WebDriver
+                    cnst;
+                    return [4 /*yield*/, new selenium_webdriver_1.Builder().forBrowser('chrome').build()];
                 case 1:
-                    driver = _a.sent();
+                    selenium_webdriver_1.WebDriver = _a.sent();
                     _a.label = 2;
                 case 2:
                     _a.trys.push([2, , 20, 22]);
